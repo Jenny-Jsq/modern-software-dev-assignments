@@ -15,7 +15,7 @@ Keep the implementation minimal.
 """
 
 # TODO: Fill this in!
-YOUR_REFLEXION_PROMPT = ""
+YOUR_REFLEXION_PROMPT = """Now critique your answer. Was it correct? If not, explain why and try again."""
 
 
 # Ground-truth test suite used to evaluate generated code
