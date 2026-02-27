@@ -12,10 +12,11 @@ Reverse the letters of the given word following the format, output only the reve
 
 Here are examples:
 
-Input: helloworld
+Input: reverse this word - helloworld
 Output: dlrowolleh
 
-Input: chatgpt
+Input: reverse the order of letters in this word
+    chatgpt
 Output: tpgtahc
 """
 
