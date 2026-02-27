@@ -15,7 +15,7 @@ Keep the implementation minimal.
 """
 
 # TODO: Fill this in!
-YOUR_REFLEXION_PROMPT = """Was it correct? If not, explain why and try again. Again, output ONLY a single fenced Python code block that defines
+YOUR_REFLEXION_PROMPT = """Was it correct? If not, explain why, refine the prompt and try again. Again, output ONLY a single fenced Python code block that defines
 the function is_valid_password(password: str) -> bool. No prose or comments."""
 
 
