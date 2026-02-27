@@ -15,9 +15,41 @@ Keep the implementation minimal.
 """
 
 # TODO: Fill this in!
-YOUR_REFLEXION_PROMPT = """Was it correct? If not, find the error and fix, refine the prompt and try again. Again, output ONLY a single fenced Python code block that defines
-the function is_valid_password(password: str) -> bool. No prose or comments."""
+YOUR_REFLEXION_PROMPT = YOUR_REFLEXION_PROMPT = """
+You are fixing a Python function called:
 
+is_valid_password(password: str) -> bool
+
+You are given:
+- The previous incorrect implementation
+- The failed test diagnostics
+
+Your task:
+1. Carefully analyze ALL failing checks.
+2. Ensure the new implementation satisfies ALL password rules.
+3. Fix every issue mentioned in the failure diagnostics.
+
+Password must:
+- Be at least 8 characters long
+- Contain at least one lowercase letter
+- Contain at least one uppercase letter
+- Contain at least one digit
+- Contain at least one special character from this set:
+  !@#$%^&*()-_
+
+Rules:
+- Use EXACT function name: is_valid_password
+- Return True only if ALL rules are satisfied
+- Return False otherwise
+- Do NOT include explanations
+- Do NOT include comments
+- Do NOT include print statements
+- Output ONLY a single fenced Python code block
+
+The code must start with:
+
+```python
+def is_valid_password(password: str) -> bool:"""
 
 # Ground-truth test suite used to evaluate generated code
 SPECIALS = set("!@#$%^&*()-_")
