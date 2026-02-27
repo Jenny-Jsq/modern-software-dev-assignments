@@ -8,25 +8,15 @@ NUM_RUNS_TIMES = 5
 
 # TODO: Fill this in!
 YOUR_SYSTEM_PROMPT = YOUR_SYSTEM_PROMPT = """
-You are a precise text transformation assistant.
-
-Reverse the letters of the given word.
+Reverse the letters of the given word following the format, output only the reversed word:
 
 Here are examples:
 
-Input: abc
-Output: cba
+Input: helloworld
+Output: dlrowolleh
 
-Input: hello
-Output: olleh
-
-Input: world
-Output: dlrow
-
-When given a word, output ONLY the reversed word.
-Do not add explanations.
-Do not add punctuation.
-Do not add extra text.
+Input: chatgpt
+Output: tpgtahc
 """
 
 USER_PROMPT = """
