@@ -37,7 +37,10 @@ QUESTION = (
 
 
 # TODO: Fill this in!
-YOUR_SYSTEM_PROMPT = ""
+YOUR_SYSTEM_PROMPT = """
+Here is how to load corpus from id-username files works now:
+CORPUS: List[str] = load_corpus_from_files(DATA_FILES)
+"""
 
 
 # For this simple example
