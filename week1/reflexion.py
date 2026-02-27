@@ -15,7 +15,7 @@ Keep the implementation minimal.
 """
 
 # TODO: Fill this in!
-YOUR_REFLEXION_PROMPT = """Now critique your answer. Was it correct? If not, explain why and try again."""
+YOUR_REFLEXION_PROMPT = """Now critique your answer. Was it correct? If not, explain why and try again. Again, only provide the single fenced Python code block. No prose or comments."""
 
 
 # Ground-truth test suite used to evaluate generated code
