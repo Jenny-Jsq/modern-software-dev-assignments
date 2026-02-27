@@ -40,6 +40,8 @@ QUESTION = (
 YOUR_SYSTEM_PROMPT = """
 Here is how to load corpus from id-username files works now:
 CORPUS: List[str] = load_corpus_from_files(DATA_FILES)
+If the Context specifies a header name (e.g., X-API-Key),
+   you MUST use that exact header name.
 """
 
 
