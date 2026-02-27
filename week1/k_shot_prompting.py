@@ -7,7 +7,27 @@ load_dotenv()
 NUM_RUNS_TIMES = 5
 
 # TODO: Fill this in!
-YOUR_SYSTEM_PROMPT = ""
+YOUR_SYSTEM_PROMPT = YOUR_SYSTEM_PROMPT = """
+You are a precise text transformation assistant.
+
+Reverse the letters of the given word.
+
+Here are examples:
+
+Input: abc
+Output: cba
+
+Input: hello
+Output: olleh
+
+Input: world
+Output: dlrow
+
+When given a word, output ONLY the reversed word.
+Do not add explanations.
+Do not add punctuation.
+Do not add extra text.
+"""
 
 USER_PROMPT = """
 Reverse the order of letters in the following word. Only output the reversed word, no other text:
