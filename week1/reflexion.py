@@ -15,7 +15,8 @@ Keep the implementation minimal.
 """
 
 # TODO: Fill this in!
-YOUR_REFLEXION_PROMPT = """Now critique your answer. Was it correct? If not, explain why and try again. Again, only provide the single fenced Python code block. No prose or comments."""
+YOUR_REFLEXION_PROMPT = """Was it correct? If not, explain why and try again. Again, output ONLY a single fenced Python code block that defines
+the function is_valid_password(password: str) -> bool. No prose or comments."""
 
 
 # Ground-truth test suite used to evaluate generated code
